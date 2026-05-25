@@ -1,0 +1,244 @@
+body{
+    color: white;
+    background-color: #0a0a0a;
+    background-image: url('./img/textureblack.jpg');
+    font-family: 'Inter', sans-serif;
+}   
+
+ul{
+    display: flex;
+    justify-content: space-between ;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color: #00c3ff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+    color: lightslategrey;
+}
+
+header {
+    padding: 64px 16px 40px;
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+h1 {
+    margin: 0 0 4px;
+}
+
+h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.habilidades {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.card {
+    background-color: #111;
+    border: 1px solid #00c3ff;
+    border-radius: 12px;
+    padding: 24px 20px;
+    width: 180px;
+}
+
+.card-icone {
+    font-size: 32px;
+}
+
+.card h4 {
+    color: #00c3ff;
+    margin: 12px 0 4px;
+}
+
+.card p {
+    color: lightslategrey;
+    font-size: 14px;
+    margin: 0;
+}
+
+.projetos {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #00c3ff;
+    border: 1px solid #00c3ff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #00c3ff;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 195, 255, 0.2);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 195, 255, 0.1);
+}
+
+.secao-texto {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.secao-texto h3,
+.secao-texto h4 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #00c3ff;
+}
+
+.secao-texto p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.destaque {
+    color: #00c3ff;
+    font-weight: 500;
+}
+
+.card-secao {
+    max-width: 680px;
+    margin: 16px auto;
+    padding: 32px 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(0, 195, 255, 0.15);
+    border-radius: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.card-secao:hover {
+    border-color: rgba(0, 195, 255, 0.4);
+}
+
+.card-secao h3,
+.card-secao h4 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #00c3ff;
+}
+
+.card-secao p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+}  
+
+.foto-container {
+    display: inline-block;
+    border-radius: 12px;
+    padding: 4px;
+    background: linear-gradient(135deg, #00c3ff, transparent, #00c3ff);
+    animation: girar 4s linear infinite;
+    margin-bottom: 24px;
+}
+
+@keyframes girar {
+    0%   { filter: hue-rotate(0deg) brightness(1); }
+    50%  { filter: hue-rotate(30deg) brightness(1.2); }
+    100% { filter: hue-rotate(0deg) brightness(1); }
+}
+
+h1 {
+    font-size: 42px;
+    color: #00c3ff;
+    font-family: 'Inter', sans-serif;
+    margin: 0 0 8px;
+    min-height: 52px;
+}
+
+h2 {
+    color: lightslategrey;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 12px;
+    display: block;
+    mix-blend-mode: screen;
+}
